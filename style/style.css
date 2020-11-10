@@ -121,7 +121,7 @@ body {
 .container-hero {
   padding-top: 10%;
   padding-left: 10%;
-  width: 500px;
+  max-width: 100%;
   height: 300px;
 }
 
@@ -130,19 +130,31 @@ body {
 }
 
 .hero-name {
-  font-size: 47px;
+  font-size: 56px;
   line-height: 1.25;
+  color: var(--accent);
+  text-shadow: #0e0c13 1px 1px 0, #0e0c13 2px 2px 0, #0e0c13 3px 3px 0,
+    #0e0c13 4px 4px 0, #0e0c13 5px 5px 0;
 }
 
 .hero-text {
-  font-size: 18px;
+  font-size: 32px;
   line-height: 1.2;
+  font-weight: 400;
   font-weight: bold;
+  color: var(--textdecoration);
+  text-shadow: #0e0c13 3px 3px 0;
+  /*text-shadow: #0e0c13 1px 1px 0, #0e0c13 2px 2px 0, #0e0c13 3px 3px 0;*/
 }
 
 .logoimg {
   background-color: var(--accent);
-  background-image: url(../images/index/hero3.jpg);
+  background-image: radial-gradient(
+      circle,
+      rgba(75, 75, 82, 0.04805672268907568) 2%,
+      rgba(0, 0, 0, 0.5578606442577031) 85%
+    ),
+    url(../images/index/hero3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
