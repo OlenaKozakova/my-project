@@ -143,8 +143,8 @@ body {
   font-weight: 400;
   font-weight: bold;
   color: var(--textdecoration);
-  text-shadow: #0e0c13 3px 3px 0;
-  /*text-shadow: #0e0c13 1px 1px 0, #0e0c13 2px 2px 0, #0e0c13 3px 3px 0;*/
+  text-shadow: #0e0c13 1px 1px 0, #0e0c13 2px 2px 0, #0e0c13 3px 3px 0,
+    #0e0c13 4px 4px 0, #0e0c13 5px 5px 0;
 }
 
 .logoimg {
