@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -74,10 +74,20 @@ body {
 }
 
 /*Код шапки*/
+.header {
+  border-bottom: 1px solid #f8a100;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+}
 
 .logo {
   margin-top: 24px;
-  margin-right: 93px;
+  margin-right: 94px;
   margin-bottom: 25px;
   font-family: "Grenze Gotisch", cursive;
   font-weight: bold;
@@ -93,12 +103,41 @@ body {
   color: var(--textdecoration);
 }
 
+.menu {
+  display: inline-flex;
+}
+
+.menu-item {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* Код героя*/
+
+.container-hero {
+  padding-top: 10%;
+  padding-left: 10%;
+  width: 500px;
+  height: 300px;
+}
+
 .hero {
   color: var(--bcgcolor);
-  display: flex;
-  justify-content: left;
-  margin-left: 5%;
+}
+
+.hero-name {
+  font-size: 47px;
+  line-height: 1.25;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .logoimg {
@@ -107,9 +146,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  object-position: top center;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  background-position: 50% 50%;
   height: 600px;
+}
+
+/*Обо мне*/
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.heading {
+  text-align: center;
 }

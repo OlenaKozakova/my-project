@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M.Kozakoff</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="container header-container">
-    <nav class="navigation">
-        <a class="link logo" href="./index.html" >
-            M.<span class="logo-white">Kozakoff</span>
-        </a>
+<header class="header">
+    <div class="container">
+        <nav class="navigation">
+            <a class="link logo" href="./index.html" >
+                M.<span class="logo-white">Kozakoff</span>
+            </a>
         
-        <ul class="list">
-            <li> <a href="" class="link">About me</a></li>
-            <li> <a href="" class="link">Preferens</a></li>
-            <li> <a href="" class="link">Portfolio</a></li>
-            <li> <a href="" class="link">Contacts</a></li>  
-        </ul>
-    </nav>
+            <ul class="list menu">
+                <li class="menu-item"> <a href="#about-me" class="link">About me</a></li>
+                <li class="menu-item"> <a href="" class="link">Preferens</a></li>
+                <li class="menu-item"> <a href="" class="link">Portfolio</a></li>
+                <li class="menu-item"> <a href="" class="link">Contacts</a></li>  
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
     <section class="logoimg">
-        <h1 class="hero">Михайло Козаков</h1>
+        <div class="hero container-hero">
+        <h1 class="hero-name">Михайло Козаков</h1>        
         <ul class="list">
             <li>
-                <p class="hero">Культуролог | Філософ</p>
+                <p class="hero-text">Культуролог | Філософ</p>
             </li>
             <li>
-                <p class="hero">Одеса | Україна</p>
+                <p class="hero-text">Одеса | Україна</p>
             </li>
         </ul>
+        </div>
     </section>
 
-    <section class="container">
-        <h2>About me</h2>
+    <section class="container aboutme">
+        <div class="about-me">
+        <a href="./index.html" name='about-me' class="link heading"><h2>About me</h2></a>
         <ul class="list">
             <li>Магістр культурології <br> ОНУ імені І.І. Мечникова</li>
             <li>Дослідник массової культури</li>
         </ul>
+        </div>
     </section>
 
     <section class="container">
