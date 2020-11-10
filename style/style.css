@@ -1,0 +1,115 @@
+:root {
+  --bcgcolor: #0e0c13;
+  --textcolor: #ffffff;
+  --accent: #f8a100;
+  --textdecoration: #cfdbe9;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+ul [class],
+li {
+  margin-top: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--textcolor);
+  background-color: var(--bcgcolor);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--textdecoration);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent);
+}
+
+/*Код шапки*/
+
+.logo {
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  font-family: "Grenze Gotisch", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent);
+}
+
+.logo-white {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--textdecoration);
+}
+
+/* Код героя*/
+.hero {
+  color: var(--bcgcolor);
+  display: flex;
+  justify-content: left;
+  margin-left: 5%;
+}
+
+.logoimg {
+  background-color: var(--accent);
+  background-image: url(../images/index/hero3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  object-position: top center;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  height: 600px;
+}
